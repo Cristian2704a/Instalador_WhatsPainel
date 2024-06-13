@@ -146,12 +146,12 @@ backend_update() {
   sudo su - deploy <<EOF
   cd /home/deploy/${empresa_atualizar}
   pm2 stop ${empresa_atualizar}-backend
+  git checkout HEAD^ backend
   git pull
   cd /home/deploy/${empresa_atualizar}/backend
   npm install
   npm update -f
-  npm install @types/fs-extra
-  rm -rf dist 
+  npm install @types/fs-extra 
   npm run build
   npx sequelize db:migrate
   npx sequelize db:seed
