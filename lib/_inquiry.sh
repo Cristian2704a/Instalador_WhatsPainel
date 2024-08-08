@@ -198,6 +198,10 @@ software_dominio() {
   configurar_dominio
 }
 
+backup() {
+  executar_backup
+}
+
 inquiry_options() {
   
   print_banner
@@ -209,6 +213,7 @@ inquiry_options() {
   printf "   [3] Bloquear Canal Vem FazerP\n"
   printf "   [4] Desbloquear Canal Vem Fazer\n"
   printf "   [5] Alter. dominio Canal Vem Fazer\n"
+  printf "   [6] Alter. dominio Canal Vem Fazer\n"
   printf "\n"
   read -p "> " option
 
@@ -235,7 +240,11 @@ inquiry_options() {
     5) 
       software_dominio 
       exit
-      ;;        
+      ;;
+      6) 
+      backup 
+      exit
+      ;;    
 
     *) exit ;;
   esac
