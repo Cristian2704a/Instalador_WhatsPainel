@@ -153,6 +153,7 @@ backend_update() {
   npm install
   npm update -f
   npm install @types/fs-extra 
+  npm install @whiskeysockets/baileys@allgood/Baileys#fixProfilePic
   npm run build
   npx sequelize db:migrate
   npx sequelize db:seed
