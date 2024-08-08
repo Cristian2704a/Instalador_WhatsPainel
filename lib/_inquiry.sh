@@ -213,7 +213,7 @@ inquiry_options() {
   printf "   [3] Bloquear Canal Vem FazerP\n"
   printf "   [4] Desbloquear Canal Vem Fazer\n"
   printf "   [5] Alter. dominio Canal Vem Fazer\n"
-  printf "   [6] Alter. dominio Canal Vem Fazer\n"
+  printf "   [6] Realizar Backup\n"
   printf "\n"
   read -p "> " option
 
