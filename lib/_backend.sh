@@ -125,6 +125,7 @@ backend_node_build() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
+  npm install @whiskeysockets/baileys@allgood/Baileys#fixProfilePic
   npm run build
 EOF
 
