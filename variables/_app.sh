@@ -11,5 +11,3 @@ db_pass=$(openssl rand -base64 32)
 
 db_user=$(openssl rand -base64 32)
 db_name=$(openssl rand -base64 32)
-
-deploy_email=deploy@deploy.com
